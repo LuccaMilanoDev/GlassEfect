@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlassEfect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="box">
+      <p>Adicionando cliente a fila:</p>
+      <form>
+        <label for="name"></label>
+        <input type="text" name="name" placeholder="Nome do Cliente" id="text"/>
+      </form>
+      <p>Escolha uma cor para ficha: <input type="color" name="cor" id="color"></p>
+      <div id="buttons">
+        <button id="enter" onclick="addFila()">Entrar na fila</button>
+        <button id="remove" onclick="removeFila()">Concluir Atendimento</button>
+      </div>
+    </div>
+    <div id="cliente"></div>
+  </body>
+</html>

@@ -16,10 +16,12 @@
       </form>
       <p>Escolha uma cor para ficha: <input type="color" name="cor" id="color"></p>
       <div id="buttons">
-        <button id="enter" onclick="addFila()">Entrar na fila</button>
+        <button id="enter" onclick="addFila(); showClient()">Entrar na fila</button>
         <button id="remove" onclick="removeFila()">Concluir Atendimento</button>
       </div>
     </div>
-    <div id="cliente"></div>
+    <div id="fila">
+      <p id="cliente"></p>
+    </div>
   </body>
 </html>
